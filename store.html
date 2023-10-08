@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" async></script>
+    <style>
+       
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url('beans.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+        
+        .main-header {
+    background-color: #060707;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .main-nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .main-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .main-nav ul li a:hover {
+            color: #9aa4b0;
+        }
+
+        .content-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            width: 100%;
+            align-content: center;
+        }
+
+        .section-header {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #070b0e;
+        }
+
+        .shop-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #ede1e1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .shop-item:hover {
+            transform: scale(1.03);
+        }
+
+        .shop-item-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .shop-item-image {
+            max-width: 200px; 
+            height: 150px;    
+            margin-bottom: 10px;
+        }
+
+
+        .shop-item-price {
+            font-weight: bold;
+            color: #0a0b0b;
+            font-size: 1.2rem;
+        }
+
+        .shop-item-button {
+            background-color: #afb2b4;
+            color: #751212;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .shop-item-button:hover {
+            background-color: #bbc9d8;
+        }
+
+  
+        footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="cart.html">CART</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center-container">
+    <section class="container content-section">
+        <br>
+        <br>
+        <br>
+        <h1 class="section-header">COFFEE</h1>
+        <div class="shop-item">
+            <span class="shop-item-title">Espresso</span>
+            <p>ingredients: Coffee beans + water/milk</p>
+            <br>
+            <img class="shop-item-image" src="expresso.jpeg">
+            <div class="shop-item-details">
+            <p style="font-weight: bold;">₹</p>    <span class="shop-item-price">250</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Mocha</span>
+            <p>ingredients:coffee beans + hot chocolate + steamed milk</p>
+            <img class="shop-item-image" src="mocha.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>    <span class="shop-item-price">210</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Americano</span>
+            <p>ingredients: Coffee beans + water/milk</p>
+            <img class="shop-item-image" src="americano.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>    <span class="shop-item-price">200</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Drip Coffee</span>
+            <p>ingredients: Ground coffee beans + hot water</p>
+            <img class="shop-item-image" src="drip.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>       <span class="shop-item-price">170</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Cappuccino</span>
+            <p>ingredients:coffee beans + Steamed milk + Milk foam</p>
+            <img class="shop-item-image" src="cappoo.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>              <span class="shop-item-price">150</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Latte</span>
+            <p>ingredients:coffee beans + Steamed milk + Milk foam</p>
+            <img class="shop-item-image" src="latte.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>        <span class="shop-item-price">170</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Macchiato</span>
+            <p>ingredients:coffee beans + A small amount of frothy milk</p>
+            <img class="shop-item-image" src="machi.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>        <span class="shop-item-price">140</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Cold Brew</span>
+            <p>ingredients: Coarsely-ground coffee beans + cold water</p>
+            <img class="shop-item-image" src="cold brew.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>            <span class="shop-item-price">160</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Iced Coffee</span>
+            <p>ingredients:brewed coffee + ice cubes</p>
+            <img class="shop-item-image" src="iced.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>            <span class="shop-item-price">125</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="container content-section">
+        <h1 class="section-header">Flavored Coffee</h1>
+        <div class="shop-item">
+            <span class="shop-item-title">Vanilla</span>
+              <p>ingredients:coffee beans + water/milk + vannila syrup/ vannila extract</p>
+            <img class="shop-item-image" src="vanilla.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>             <span class="shop-item-price">199</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Caramel</span>
+             <p>ingredients:coffee beans + water/milk + caramel syrup</p>
+            <img class="shop-item-image" src="caramel.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>                <span class="shop-item-price">199</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">cinnamon</span>
+            <p>ingredients:coffee beans + water/milk + cinnamon syrup</p>
+            <img class="shop-item-image" src="cina.jpeg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>            <span class="shop-item-price">199</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">hazelnut</span>
+            <p>ingredients:coffee beans + water/milk + hazelnut syrup</p>
+            <img class="shop-item-image" src="hazelnut.jpg">
+            <div class="shop-item-details">
+                <p style="font-weight: bold;">₹</p>             <span class="shop-item-price">199</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Irene</p>
+    </footer>
+</body>
+</html>
